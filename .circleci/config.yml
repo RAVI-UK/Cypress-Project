@@ -4,4 +4,16 @@ orbs:
 workflows:
   build:
     jobs:
-      - cypress/run
+      - cypress/run:
+          name: Development tests
+          filters:
+            branches:
+              ignore:
+                - master
+      - cypress/run:
+          name: Production tests
+          spec: cypress/integration/*
+          filters:
+            branches:
+              only:
+                - master
