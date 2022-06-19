@@ -11,7 +11,7 @@
     "prettier": "2.7.1"
   },
   "scripts": {
-    "test": "npx cypress run --record --key b8339e48-8683-42dd-8303-a64ef256d6bd"
+    "test": "cypress run --record --key b8339e48-8683-42dd-8303-a64ef256d6bd"
   },
   "author": "",
   "license": "ISC"
