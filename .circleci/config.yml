@@ -1,17 +1,8 @@
-version: '2.1'
+version: 2.1
 orbs:
-  node: circleci/node@5.0.2
-jobs:
-  test wiki:
-    executor:
-      name: node/default
-      tag: '13.14'
-    steps:
-      - checkout
-      - node/install-packages
-      - run:
-          command: npm run test
+  cypress: cypress-io/cypress@1
 workflows:
-  test_my_app:
+  build:
     jobs:
-      - test wiki   
+      - cypress/run:
+          record: true
