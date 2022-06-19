@@ -15,6 +15,6 @@ import wikiPage from '../Pages/wikiPage'
         }),
         describe('Fail Sample Test', () => {
             it('fail test', () => {
-                homePage.fail();
+                //homePage.fail();
             })
         });
