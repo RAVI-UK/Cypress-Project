@@ -11,7 +11,7 @@
     "prettier": "2.7.1"
   },
   "scripts": {
-    "test": "cypress open"
+    "test": "npx cypress run --spec cypress/e2e/integrationtests/*.cy.js"
   },
   "author": "",
   "license": "ISC"
